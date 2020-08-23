@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  ProgressBar.swift
+//  SwiftUIPhase
 //
 //  Created by Jeremy Vineyard on 8/23/20.
 //
@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 /// ProgressView is only available in iOS 14, this gives us one for iOS 13
+// FUTURE: support label
 struct ProgressBar: View {
     let value: Double
     let total: Double
