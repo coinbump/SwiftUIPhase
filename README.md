@@ -1,3 +1,3 @@
 # SwiftUIPhase
 
-A description of this package.
+Some reusable SwiftUI components that might prove useful.
