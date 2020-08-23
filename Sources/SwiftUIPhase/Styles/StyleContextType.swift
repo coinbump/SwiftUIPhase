@@ -8,7 +8,7 @@
 import Foundation
 
 /// Defines a context for a style. Example: a style looks different when interactive vs non interactive
-enum StyleContextType: String {
+public enum StyleContextType: String {
     // Display-only content
     case display
     case interactive

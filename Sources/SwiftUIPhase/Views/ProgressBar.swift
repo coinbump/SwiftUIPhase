@@ -10,7 +10,7 @@ import SwiftUI
 
 /// ProgressView is only available in iOS 14, this gives us one for iOS 13
 // FUTURE: support label
-struct ProgressBar: View {
+public struct ProgressBar: View {
     let value: Double
     let total: Double
 
@@ -18,7 +18,7 @@ struct ProgressBar: View {
         static let progressBarHeight: CGFloat = 4.0
     }
 
-    var body: some View {
+    public var body: some View {
         if #available(iOS 14.0, *) {
             ProgressView(value: value, total: total)
         }
