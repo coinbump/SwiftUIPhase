@@ -1,5 +1,4 @@
 # SwiftUIPhase: An extension to the standard SwiftUI library.
-======================================
 
 - [Why](#why) 
 - [Requirements](#requirements) 
