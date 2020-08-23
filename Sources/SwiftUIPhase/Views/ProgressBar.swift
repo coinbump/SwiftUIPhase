@@ -30,9 +30,9 @@ public struct ProgressBar<Label>: View where Label: View {
         else {
             ZStack {
                 GeometryReader { geometry in
-                    RoundedRectangle(cornerRadius: Constants.progressBarHeight/2.0)
+                    Capsule()
                         .fill(Color(.systemGray5))
-                    RoundedRectangle(cornerRadius: Constants.progressBarHeight/2.0)
+                    Capsule()
                         .fill(Color(.systemBlue))
                         .frame(width: geometry.size.width*CGFloat(value), height: nil, alignment: .center)
                 }
