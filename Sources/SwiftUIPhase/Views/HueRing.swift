@@ -18,7 +18,7 @@ public struct HueRing: View {
     public init(lineWidth: CGFloat = 10.0) {
         self.lineWidth = lineWidth
 
-        let colorSteps = 20
+        let colorSteps = 36
 
         var colors = [UIColor]()
         for i in 0..<colorSteps {
