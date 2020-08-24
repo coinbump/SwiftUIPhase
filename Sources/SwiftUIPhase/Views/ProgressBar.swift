@@ -15,7 +15,7 @@ private enum Constants {
 /// ProgressView is only available in iOS 14, this gives us one for iOS 13
 // FUTURE: support label
 public struct ProgressBar<Label>: View where Label: View {
-    let value: Double
+    @State let value: Double
     let total: Double
 
     public init(value: Double, total: Double = 1.0) where Label == EmptyView {
