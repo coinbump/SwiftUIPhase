@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 /// Bridge for fonts not available in iOS 13
+/// FUTURE: mimic the iOS 14 fonts?
 extension Font {
     public static var title2Bridge: Font {
         if #available(iOS 14, *) {
