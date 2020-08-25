@@ -50,9 +50,9 @@ public struct ThreeDotsProgressView: View {
         HStack(alignment: .center, spacing: dotSize*configuration.spacingFactor) {
             ForEach(0..<dotsOn.count) { index in
                 let isDotOn = dotsOn[index]
-                let dotSize = isDotOn ? self.dotSize * configuration.minDotScale : self.dotSize * configuration.maxDotScale
                 DotView(color: Color(isDotOn ? .lightGray : .clear))
                     .frame(width: dotSize, height: dotSize, alignment: .center)
+                    .scaleEffect(isDotOn ? configuration.maxDotScale : configuration.minDotScale, anchor: .center)
             }
         }
         .onReceive(timerPublisher) { time in
